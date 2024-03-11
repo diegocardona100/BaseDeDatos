@@ -166,7 +166,7 @@ namespace BaseDeDatos
         {
             //string nombre = comboBox1.SelectedValue.ToString();
             
-            int noEmpleado = Convert.ToInt16(comboBox1.SelectedValue);
+            
             /*
             for (int i = 0; i < empleados.Count; i++)
             {
@@ -176,24 +176,28 @@ namespace BaseDeDatos
             }
             */
 
-            Empleado empleadofound = empleados.Find(c => c.NumEm == noEmpleado);
-
-            textBox1.Text = empleadofound.Nombre;
-
-
-
-
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+               /*
+            Empleado empleadoencontrado = empleados.Find(c => c.NumEm == noEmple);
+                Asistencia asistenciaEncontrada = asistencias.Find(c => c.NumeroEm == numeroEm);
+               
+            decimal sueldo = empleadoencontrado.Sueldo * asistenciaEncontrada.Horas;
+
+
+            textBox1.Text = empleadoencontrado.Nombre;
+            textBox2.Text = sueldo.ToString();
+
+            */
 
             //textBox1.Text = comboBox1.Text;
 
 
 
-            
+
 
         }
     }
